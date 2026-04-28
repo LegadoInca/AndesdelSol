@@ -136,8 +136,8 @@ export default function HeroSection() {
             {/* Title */}
             <h1 className="text-white font-black leading-none mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
               <span className="block text-4xl md:text-6xl text-amber-300">{t('hero_title1')}</span>
-              <span className="block text-3xl md:text-5xl mt-2">{t('hero_title2')}</span>
-              <span className="block text-3xl md:text-5xl">{t('hero_title3')}</span>
+              <span className="block text-2xl md:text-4xl mt-2">{t('hero_title2')}</span>
+              <span className="block text-2xl md:text-4xl">{t('hero_title3')}</span>
             </h1>
 
             {/* Subtitle */}

@@ -7,21 +7,21 @@ const hotspots = [
     x: 18,
     y: 22,
     label: 'Mano del artesano: Detalle del punto',
-    image: 'https://readdy.ai/api/search-image?query=extreme%20close%20up%20peruvian%20artisan%20hand%20fingers%20weaving%20colorful%20wool%20threads%20on%20loom%2C%20macro%20photography%2C%20warm%20golden%20light%2C%20sharp%20detail%2C%20terracotta%20and%20gold%20tones&width=280&height=180&seq=hs1&orientation=landscape',
+    image: '/AndesdelSol/images/mano.png',
   },
   {
     id: 2,
     x: 35,
     y: 60,
     label: 'Lana de alpaca teñida',
-    image: 'https://readdy.ai/api/search-image?query=close%20up%20of%20colorful%20dyed%20alpaca%20wool%20threads%20in%20vibrant%20red%20orange%20gold%20colors%2C%20traditional%20peruvian%20natural%20dyes%2C%20macro%20photography%2C%20warm%20light%2C%20texture%20detail&width=280&height=180&seq=hs2&orientation=landscape',
+    image: '/AndesdelSol/images/lana.png',
   },
   {
     id: 3,
     x: 10,
     y: 75,
     label: 'Telar ancestral de madera',
-    image: 'https://readdy.ai/api/search-image?query=close%20up%20of%20traditional%20wooden%20andean%20loom%20with%20colorful%20threads%2C%20peruvian%20weaving%20tool%2C%20warm%20natural%20light%2C%20macro%20photography%2C%20artisan%20craft%20detail&width=280&height=180&seq=hs3&orientation=landscape',
+    image: '/AndesdelSol/images/telar.png',
   },
 ];
 
@@ -52,7 +52,7 @@ export default function ImpactoSection() {
         style={{ transform: `translateY(${scrollY}px)`, willChange: 'transform', top: '-10%', bottom: '-10%' }}
       >
         <img
-          src="https://readdy.ai/api/search-image?query=peruvian%20andean%20woman%20working%20on%20traditional%20loom%20weaving%20colorful%20textile%2C%20close%20up%20of%20hands%20and%20threads%2C%20warm%20golden%20light%2C%20documentary%20photography%2C%20powerful%20and%20authentic%20artisan%20process%2C%20motion%20blur%20effect&width=1920&height=1080&seq=impact1&orientation=landscape"
+          src="/AndesdelSol/images/fondo1.jpeg"
           alt="Tejiendo artesanía"
           className="w-full h-full object-cover object-center"
         />
