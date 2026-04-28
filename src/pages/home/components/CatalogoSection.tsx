@@ -267,7 +267,7 @@ export default function CatalogoSection({ onAddToCart }: CatalogoSectionProps) {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/AndesdelSol/images/artesania.jpg')" }}
+          style={{ backgroundImage: "url('/AndesdelSol/images/fondo2.jpg')" }}
         />
         <div
           className="absolute inset-0"
