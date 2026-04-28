@@ -20,7 +20,6 @@ export default function Home() {
       <Navbar cartCount={count} onCartOpen={() => setIsOpen(true)} />
       <HeroSection />
       <ProductorasSection />
-      <StatsSection />
       <ImpactoSection />
       <CatalogoSection onAddToCart={addItem} />
       <ProcesoSection />

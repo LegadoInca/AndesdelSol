@@ -88,8 +88,6 @@ export default function ProductorasSection() {
                   alt={p.name}
                   className="w-full h-full object-cover object-top"
                 />
-                {idx === active && (
-                )}
                 {/* Active bar */}
                 <div className={`absolute left-0 top-0 bottom-0 w-1 bg-amber-400 transition-opacity duration-300 ${idx === active ? 'opacity-100' : 'opacity-0'}`}></div>
               </button>
