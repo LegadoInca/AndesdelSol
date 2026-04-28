@@ -1,0 +1,19 @@
+{
+  "name": "Andes del Sol - Artesanías Peruanas",
+  "short_name": "AndesdelSol",
+  "description": "Artesanías auténticas hechas a mano por mujeres tejedoras de los Andes peruanos",
+  "start_url": "/AndesdelSol/",
+  "scope": "/AndesdelSol/",
+  "display": "standalone",
+  "background_color": "#1A0A00",
+  "theme_color": "#C9A84C",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
