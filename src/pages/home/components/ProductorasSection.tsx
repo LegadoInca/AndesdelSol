@@ -33,20 +33,15 @@ export default function ProductorasSection() {
   }, []);
 
   return (
-    <section id="productoras" className="pt-24 pb-10 relative overflow-hidden">
+    <section id="productoras" className="pt-24 pb-10 relative overflow-hidden" style={{ backgroundColor: '#1a0a00' }}>
       {/* Video background */}
       <video
         autoPlay muted loop playsInline
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ opacity: 0.35, zIndex: 0 }}
+        style={{ opacity: 0.5, zIndex: 0 }}
       >
         <source src="/AndesdelSol/videos/fondos1.mp4" type="video/mp4" />
       </video>
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ background: "#1a0a00" }}
-      />
       {/* Warm golden overlay — light so the image breathes */}
       <div
         className="absolute inset-0"
