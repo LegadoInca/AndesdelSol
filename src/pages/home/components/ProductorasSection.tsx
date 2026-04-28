@@ -37,7 +37,7 @@ export default function ProductorasSection() {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('https://res.cloudinary.com/djfmngyl0/image/upload/v1775317839/pexels-d-r-2148748679-33799197_fu1ero.jpg')" }}
+        style={{ background: "#1a0a00" }}
       />
       {/* Warm golden overlay — light so the image breathes */}
       <div
@@ -81,7 +81,15 @@ export default function ProductorasSection() {
                   className="w-full h-full object-cover object-top"
                 />
                 {idx === active && (
-                  <div className="absolute inset-0 bg-amber-400/10"></div>
+                  {/* Video background */}
+      <video
+        autoPlay muted loop playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ opacity: 0.35, zIndex: 0 }}
+      >
+        <source src="/AndesdelSol/videos/fondos1.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-amber-400/10"></div>
                 )}
                 {/* Active bar */}
                 <div className={`absolute left-0 top-0 bottom-0 w-1 bg-amber-400 transition-opacity duration-300 ${idx === active ? 'opacity-100' : 'opacity-0'}`}></div>
