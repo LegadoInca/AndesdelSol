@@ -17,7 +17,7 @@ const en = {
   hero_cta_artisans: "Meet Our Artisans",
 
   // Productoras
-  prod_badge: "They are AYNI",
+  prod_badge: "They are Andes del Sol",
   prod_title1: "The Hands that Weave",
   prod_title2: "Stories of Resilience",
   prod_desc: "Meet the extraordinary women behind each creation. Mothers, daughters and sisters from Andean communities who have transformed pain into art, adversity into opportunity, and tradition into innovation.",
@@ -31,7 +31,7 @@ const en = {
   impact_right_title2: "Real Social Impact",
   impact_p1: "We work with remote communities in the Peruvian Andes, often forgotten by the State. Women who have survived political, social and domestic violence and who today transform their story into art.",
   impact_p2: "Every purchase you make directly funds a family\'s livelihood, their children\'s education and the strengthening of their community. It\'s not just a craft, it\'s an act of solidarity.",
-  impact_p3: "The name Ayni comes from Quechua and means reciprocity: giving and receiving in community. That is exactly what we do together.",
+  impact_p3: "The name Andes del Sol comes from Quechua and means reciprocity: giving and receiving in community. That is exactly what we do together.",
   impact_stat1: "100% Fair Trade",
   impact_stat2: "Supporting 50+ Families",
   impact_stat3: "Empowered Andean Communities",

@@ -17,7 +17,7 @@ const de = {
   hero_cta_artisans: "Unsere Handwerkerinnen kennenlernen",
 
   // Productoras
-  prod_badge: "Sie sind AYNI",
+  prod_badge: "Sie sind Andes del Sol",
   prod_title1: "Die Hände, die weben",
   prod_title2: "Geschichten der Stärke",
   prod_desc: "Lernen Sie die außergewöhnlichen Frauen hinter jeder Schöpfung kennen. Mütter, Töchter und Schwestern aus Andengemeinschaften, die Schmerz in Kunst, Widrigkeiten in Chancen und Tradition in Innovation verwandelt haben.",
@@ -31,7 +31,7 @@ const de = {
   impact_right_title2: "echtem sozialen Einfluss",
   impact_p1: "Wir arbeiten mit abgelegenen Gemeinschaften in den peruanischen Anden, die oft vom Staat vergessen werden. Frauen, die politische, soziale und häusliche Gewalt überlebt haben und heute ihre Geschichte in Kunst verwandeln.",
   impact_p2: "Jeder Kauf, den Sie tätigen, finanziert direkt den Lebensunterhalt einer Familie, die Ausbildung ihrer Kinder und die Stärkung ihrer Gemeinschaft. Es ist nicht nur ein Handwerk, es ist ein Akt der Solidarität.",
-  impact_p3: "Der Name Ayni kommt aus dem Quechua und bedeutet Gegenseitigkeit: Geben und Empfangen in der Gemeinschaft. Genau das tun wir gemeinsam.",
+  impact_p3: "Der Name Andes del Sol kommt aus dem Quechua und bedeutet Gegenseitigkeit: Geben und Empfangen in der Gemeinschaft. Genau das tun wir gemeinsam.",
   impact_stat1: "100% Fairer Handel",
   impact_stat2: "Unterstützung von 50+ Familien",
   impact_stat3: "Gestärkte Andengemeinschaften",

@@ -17,7 +17,7 @@ const cs = {
   hero_cta_artisans: "Poznejte naše řemeslnice",
 
   // Productoras
-  prod_badge: "Ony jsou AYNI",
+  prod_badge: "Ony jsou Andes del Sol",
   prod_title1: "Ruce, které tkají",
   prod_title2: "Příběhy odolnosti",
   prod_desc: "Poznejte mimořádné ženy za každým výtvorem. Matky, dcery a sestry z andských komunit, které přeměnily bolest v umění, nepřízeň v příležitost a tradici v inovaci.",
@@ -31,7 +31,7 @@ const cs = {
   impact_right_title2: "skutečným sociálním dopadem",
   impact_p1: "Pracujeme s odlehlými komunitami v peruánských Andách, které stát často zapomíná. Ženy, které přežily politické, sociální a domácí násilí a dnes přeměňují svůj příběh v umění.",
   impact_p2: "Každý nákup, který provedete, přímo financuje živobytí rodiny, vzdělání jejich dětí a posílení jejich komunity. Není to jen řemeslo, je to akt solidarity.",
-  impact_p3: "Název Ayni pochází z kečuánštiny a znamená vzájemnost: dávat a přijímat v komunitě. Přesně to děláme společně.",
+  impact_p3: "Název Andes del Sol pochází z kečuánštiny a znamená vzájemnost: dávat a přijímat v komunitě. Přesně to děláme společně.",
   impact_stat1: "100% Spravedlivý obchod",
   impact_stat2: "Podpora 50+ rodin",
   impact_stat3: "Posílené andské komunity",
