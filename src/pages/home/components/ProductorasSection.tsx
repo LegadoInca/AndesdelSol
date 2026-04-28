@@ -38,7 +38,7 @@ export default function ProductorasSection() {
       <video
         autoPlay muted loop playsInline
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ opacity: 0.5, zIndex: 0 }}
+        style={{ opacity: 0.8, zIndex: 0 }}
       >
         <source src="/AndesdelSol/videos/fondos1.mp4" type="video/mp4" />
       </video>
