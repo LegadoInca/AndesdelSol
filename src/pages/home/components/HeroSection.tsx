@@ -14,31 +14,31 @@ const slides: Slide[] = [
   {
     id: 1,
     type: 'video',
-    src: 'https://res.cloudinary.com/djfmngyl0/video/upload/v1775279987/4438993-uhd_3840_2160_30fps_sxqudw.mp4',
+    src: '/AndesdelSol/videos/hero1.mp4',
     label: 'Tejidos Ancestrales',
   },
   {
     id: 2,
     type: 'image',
-    src: "https://readdy.ai/api/search-image?query=close%20up%20of%20peruvian%20andean%20woman%20hands%20crafting%20traditional%20ceramic%20pottery%20with%20clay%2C%20warm%20earthy%20tones%2C%20artisan%20workshop%2C%20documentary%20photography%2C%20powerful%20and%20authentic%20scene&width=1920&height=1080&seq=hero2&orientation=landscape",
+    src: "/AndesdelSol/images/hero2.jpeg",
     label: 'Cerámica Viva',
   },
   {
     id: 3,
     type: 'image',
-    src: "https://readdy.ai/api/search-image?query=group%20of%20peruvian%20andean%20women%20artisans%20in%20traditional%20colorful%20clothing%20working%20together%20in%20mountain%20community%2C%20warm%20sunlight%2C%20documentary%20photography%2C%20empowering%20and%20authentic%20scene&width=1920&height=1080&seq=hero3&orientation=landscape",
+    src: "/AndesdelSol/images/hero3.jpeg",
     label: 'Comunidad y Fuerza',
   },
   {
     id: 4,
     type: 'image',
-    src: "https://readdy.ai/api/search-image?query=beautiful%20peruvian%20andean%20artisan%20woman%20with%20traditional%20colorful%20textiles%20and%20crafts%20displayed%2C%20mountain%20andes%20background%2C%20warm%20golden%20hour%20light%2C%20documentary%20photography%2C%20proud%20and%20dignified&width=1920&height=1080&seq=hero4&orientation=landscape",
+    src: "/AndesdelSol/images/hero4.jpeg",
     label: 'Arte con Propósito',
   },
   {
     id: 5,
     type: 'image',
-    src: "https://readdy.ai/api/search-image?query=traditional%20peruvian%20andean%20crafts%20and%20textiles%20displayed%20in%20mountain%20market%2C%20colorful%20handmade%20products%2C%20warm%20natural%20light%2C%20documentary%20photography%2C%20vibrant%20and%20authentic%20scene&width=1920&height=1080&seq=hero5&orientation=landscape",
+    src: "/AndesdelSol/images/hero5.jpeg",
     label: 'Colores del Ande',
   },
 ];
@@ -135,7 +135,7 @@ export default function HeroSection() {
 
             {/* Title */}
             <h1 className="text-white font-black leading-none mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-              <span className="block text-7xl md:text-9xl text-amber-300">{t('hero_title1')}</span>
+              <span className="block text-4xl md:text-6xl text-amber-300">{t('hero_title1')}</span>
               <span className="block text-3xl md:text-5xl mt-2">{t('hero_title2')}</span>
               <span className="block text-3xl md:text-5xl">{t('hero_title3')}</span>
             </h1>
@@ -149,18 +149,20 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => scrollTo('catalogo')}
-                className="inline-flex items-center gap-2 bg-white text-stone-900 px-8 py-4 rounded-full font-semibold text-sm cursor-pointer hover:bg-amber-300 transition-colors whitespace-nowrap"
+                className="relative overflow-hidden inline-flex items-center gap-2 bg-white text-stone-900 px-8 py-4 rounded-full font-semibold text-sm cursor-pointer hover:bg-amber-300 transition-colors whitespace-nowrap group"
               >
-                {t('hero_cta_catalog')}
-                <div className="w-4 h-4 flex items-center justify-center">
+                <span className="relative z-10">{t('hero_cta_catalog')}</span>
+                <div className="relative z-10 w-4 h-4 flex items-center justify-center">
                   <i className="ri-arrow-right-line"></i>
                 </div>
+                <span className="absolute top-0 bottom-0 w-1/3 animate-shimmer bg-gradient-to-r from-transparent via-white/60 to-transparent" />
               </button>
               <button
                 onClick={() => scrollTo('productoras')}
-                className="inline-flex items-center gap-2 border-2 border-white/70 text-white px-8 py-4 rounded-full font-semibold text-sm cursor-pointer hover:bg-white/10 transition-colors whitespace-nowrap"
+                className="relative overflow-hidden inline-flex items-center gap-2 border-2 border-white/70 text-white px-8 py-4 rounded-full font-semibold text-sm cursor-pointer hover:bg-white/10 transition-colors whitespace-nowrap group"
               >
-                {t('hero_cta_artisans')}
+                <span className="relative z-10">{t('hero_cta_artisans')}</span>
+                <span className="absolute top-0 bottom-0 w-1/3 animate-shimmer bg-gradient-to-r from-transparent via-white/40 to-transparent" />
               </button>
             </div>
           </div>

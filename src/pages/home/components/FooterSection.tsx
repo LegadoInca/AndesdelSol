@@ -11,7 +11,7 @@ export default function FooterSection() {
           <div>
             <img
               src="https://public.readdy.ai/ai/img_res/1a7d4011-655d-43af-8ac4-7728ff0a084e.png"
-              alt="AYNI"
+              alt="Andes del Sol"
               className="h-14 w-auto object-contain mb-4"
             />
             <p className="text-white/60 text-sm leading-relaxed mb-5">{t('footer_tagline')}</p>
@@ -91,7 +91,7 @@ export default function FooterSection() {
       {/* Bottom */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-white/40 text-xs">© 2026 AYNI. {t('footer_rights')}</p>
+          <p className="text-white/40 text-xs">© 2026 Andes del Sol. {t('footer_rights')}</p>
           <div className="flex gap-4">
             {['footer_privacy', 'footer_terms', 'footer_cookies_link'].map(key => (
               <a key={key} href="#" rel="nofollow" className="text-white/40 text-xs hover:text-white/70 transition-colors cursor-pointer whitespace-nowrap">
@@ -105,7 +105,7 @@ export default function FooterSection() {
       {/* Big AYNI text */}
       <div className="overflow-hidden">
         <p className="text-center text-white/5 font-black select-none" style={{ fontSize: 'clamp(80px, 15vw, 200px)', fontFamily: "'Playfair Display', serif", lineHeight: 1 }}>
-          AYNI
+          Andes del Sol
         </p>
       </div>
     </footer>
