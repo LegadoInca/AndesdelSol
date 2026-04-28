@@ -263,15 +263,18 @@ export default function CatalogoSection({ onAddToCart }: CatalogoSectionProps) {
         }
       `}</style>
 
-      <section id="catalogo" className="py-24 relative overflow-hidden">
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/AndesdelSol/images/fondo2.jpg')" }}
-        />
+      <section id="catalogo" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#1a0a00' }}>
+        {/* Video background */}
+        <video
+          autoPlay muted loop playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ opacity: 1, zIndex: 0 }}
+        >
+          <source src="/AndesdelSol/videos/fondo3.mp4" type="video/mp4" />
+        </video>
         <div
           className="absolute inset-0"
-          style={{ background: 'linear-gradient(135deg, rgba(255,248,230,0.55) 0%, rgba(245,232,200,0.50) 50%, rgba(255,248,230,0.55) 100%)' }}
+          style={{ background: 'linear-gradient(135deg, rgba(30,15,5,0.35) 0%, rgba(20,10,3,0.30) 50%, rgba(30,15,5,0.35) 100%)', zIndex: 1 }}
         />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
