@@ -45,7 +45,7 @@ export default function ProductorasSection() {
       {/* Warm golden overlay — light so the image breathes */}
       <div
         className="absolute inset-0"
-        style={{ background: 'linear-gradient(160deg, rgba(30,15,5,0.52) 0%, rgba(60,30,8,0.45) 50%, rgba(30,15,5,0.52) 100%)' }}
+        style={{ background: 'linear-gradient(160deg, rgba(30,15,5,0.25) 0%, rgba(60,30,8,0.20) 50%, rgba(30,15,5,0.25) 100%)' }}
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         {/* Header */}
