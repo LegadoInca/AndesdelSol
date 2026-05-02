@@ -395,14 +395,9 @@ export default function HistoriasSection() {
   return (
     <section id="historias" className="relative py-2 md:py-4 overflow-hidden">
       {/* Background */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `url(/AndesdelSol/images/familia1.jpeg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
+      <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
+        <source src="/AndesdelSol/videos/fondo2.mp4" type="video/mp4" />
+      </video>
       <div className="absolute inset-0" style={{ background: "rgba(18,8,3,0.32)" }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">

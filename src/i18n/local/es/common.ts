@@ -17,7 +17,7 @@ const es = {
   hero_cta_artisans: "Conoce a Nuestras Artesanas",
 
   // Productoras
-  prod_badge: "Ellas son Andes del Sol",
+  prod_badge: "Ellas son AYNI",
   prod_title1: "Las Manos que Tejen",
   prod_title2: "Historias de Superación",
   prod_desc: "Conoce a las mujeres extraordinarias detrás de cada creación. Madres, hijas y hermanas de comunidades andinas que han transformado el dolor en arte, la adversidad en oportunidad, y la tradición en innovación.",
@@ -31,7 +31,7 @@ const es = {
   impact_right_title2: "Impacto Social Real",
   impact_p1: "Trabajamos con comunidades alejadas de los Andes peruanos, muchas veces olvidadas por el Estado. Mujeres que han sobrevivido violencia política, social e intrafamiliar y que hoy transforman su historia en arte.",
   impact_p2: "Cada compra que realizas financia directamente el sustento de una familia, la educación de sus hijos y el fortalecimiento de su comunidad. No es solo una artesanía, es un acto de solidaridad.",
-  impact_p3: "El nombre Andes del Sol viene del quechua y significa reciprocidad: dar y recibir en comunidad. Eso es exactamente lo que hacemos juntos.",
+  impact_p3: "El nombre Ayni viene del quechua y significa reciprocidad: dar y recibir en comunidad. Eso es exactamente lo que hacemos juntos.",
   impact_stat1: "100% Comercio Justo",
   impact_stat2: "Apoyo a 50+ Familias",
   impact_stat3: "Comunidades Andinas Empoderadas",
