@@ -327,12 +327,6 @@ function PeruMapImage({
               >
                 {activePerson.title}
               </p>
-              <p
-                className="leading-relaxed"
-                style={{ color: "rgba(184,168,152,0.80)", fontSize: "10.5px" }}
-              >
-                {activePerson.subtitle}
-              </p>
             </div>
 
             {/* Tabs */}
@@ -437,7 +431,7 @@ export default function HistoriasSection() {
               }}
             >
             {/* Region list */}
-            <div className="flex flex-col gap-1">
+            <div className="grid grid-cols-2 gap-1">
               {regions.map((r) => {
                 const isActive = activeRegionId === r.id;
                 return (
