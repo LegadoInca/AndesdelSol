@@ -419,7 +419,7 @@ export default function HistoriasSection() {
                 {t("stories_mapSubtitle")}
               </p>
               <div className="flex mt-5 overflow-visible">
-                <div className="relative overflow-hidden flex w-full items-center gap-2 px-5 py-2 rounded-full font-sans text-xs font-semibold tracking-[0.8em] uppercase cursor-default select-none whitespace-nowrap" style={{ background: 'linear-gradient(135deg, #c2622a 0%, #e07830 50%, #c2622a 100%)', color: '#fff8f0', boxShadow: '0 0 18px rgba(210,100,40,0.35)' }}>
+                <div className="relative overflow-hidden flex w-full items-center gap-2 px-5 py-2 rounded-full font-sans text-xs font-semibold tracking-[0.1em] uppercase cursor-default select-none whitespace-nowrap" style={{ background: 'linear-gradient(135deg, #c2622a 0%, #e07830 50%, #c2622a 100%)', color: '#fff8f0', boxShadow: '0 0 18px rgba(210,100,40,0.35)' }}>
                   <i className="ri-map-pin-line text-sm" />
                   {t("stories_mapHint")}
                   <span className="absolute top-0 bottom-0 w-1/3 animate-shimmer bg-gradient-to-r from-transparent via-white/30 to-transparent" />
