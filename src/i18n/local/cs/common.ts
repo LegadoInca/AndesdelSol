@@ -133,7 +133,7 @@ const cs = {
   stories_mapSubtitle: "Řemeslnice z peruánských And uchovávají dávné techniky z pěti různých regionů.",
   stories_families: "rodin",
   stories_familiesActive: "aktivních rodin",
-  stories_mapHint: "Klepněte na region a objevte jeho příběhy",
+  stories_mapHint: "Klepnutím na oblast objevíte ruce za nimi",
 
 };
 

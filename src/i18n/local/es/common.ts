@@ -133,7 +133,7 @@ const es = {
   stories_mapSubtitle: "Las artesanas de los Andes peruanos preservan técnicas ancestrales de cinco regiones distintas.",
   stories_families: "familias",
   stories_familiesActive: "familias activas",
-  stories_mapHint: "Toca una región para descubrir sus historias",
+  stories_mapHint: "Toca una región para descubrir las manos detrás",
 
 };
 

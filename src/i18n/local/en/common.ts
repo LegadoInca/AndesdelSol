@@ -133,7 +133,7 @@ const en = {
   stories_mapSubtitle: "The artisans of the Peruvian Andes preserve ancestral techniques from five distinct regions.",
   stories_families: "families",
   stories_familiesActive: "active families",
-  stories_mapHint: "Tap a region to discover its stories",
+  stories_mapHint: "Tap a region to discover the hands behind",
 
 };
 

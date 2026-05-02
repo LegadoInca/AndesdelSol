@@ -133,7 +133,7 @@ const de = {
   stories_mapSubtitle: "Die Kunsthandwerkerinnen der peruanischen Anden bewahren überlieferte Techniken aus fünf verschiedenen Regionen.",
   stories_families: "Familien",
   stories_familiesActive: "aktive Familien",
-  stories_mapHint: "Tippe auf eine Region, um ihre Geschichten zu entdecken",
+  stories_mapHint: "Tippe auf einen Bereich, um die dahinter stehenden Personen zu entdecken.",
 
 };
 
