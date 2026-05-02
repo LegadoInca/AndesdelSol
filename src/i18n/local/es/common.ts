@@ -126,6 +126,15 @@ const es = {
   lang_en: "English",
   lang_de: "Deutsch",
   lang_cs: "Čeština",
+  // Stories / Map
+  stories_badge: "Voces de Transformación",
+  stories_mapTitle: "Cada región tiene un",
+  stories_mapTitleEm: "nombre",
+  stories_mapSubtitle: "Las artesanas de los Andes peruanos preservan técnicas ancestrales de cinco regiones distintas.",
+  stories_families: "familias",
+  stories_familiesActive: "familias activas",
+  stories_mapHint: "Toca una región para descubrir sus historias",
+
 };
 
 export default es;

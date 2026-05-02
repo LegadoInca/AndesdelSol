@@ -398,7 +398,7 @@ export default function HistoriasSection() {
       <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
         <source src="/AndesdelSol/videos/fondo2.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0" style={{ background: "rgba(35,20,8,0.72)" }} />
+      <div className="absolute inset-0" style={{ background: "rgba(18,8,3,0.32)" }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
@@ -411,18 +411,18 @@ export default function HistoriasSection() {
               <div className="flex items-center gap-2 mb-4">
                 <span className="w-8 h-px" style={{ background: "#C17A5C" }} />
                 <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#C17A5C" }}>
-                  {t("stories.badge")}
+                  {t("stories_badge")}
                 </span>
               </div>
               <h2
                 className="font-bold leading-tight whitespace-nowrap"
                 style={{ fontFamily: "'Cormorant Garamond', serif", color: "#F5E6D3", fontSize: "3rem" }}
               >
-                {t("stories.mapTitle")}{" "}
-                <em style={{ color: "#C17A5C", fontStyle: "italic", fontSize: "3.3rem" }}>{t("stories.mapTitleEm")}</em>
+                {t("stories_mapTitle")}{" "}
+                <em style={{ color: "#C17A5C", fontStyle: "italic", fontSize: "3.3rem" }}>{t("stories_mapTitleEm")}</em>
               </h2>
               <p className="text-sm leading-relaxed mt-3" style={{ color: "#B8A898" }}>
-                {t("stories.mapSubtitle")}
+                {t("stories_mapSubtitle")}
               </p>
             </div>
 
@@ -469,7 +469,7 @@ export default function HistoriasSection() {
                         {r.name}
                       </p>
                       <p className="text-xs mt-0.5" style={{ color: isActive ? "#C17A5C" : "rgba(184,168,152,0.6)" }}>
-                        {r.group} · {r.families} {t("stories.familiesActive")}
+                        {r.group} · {r.families} {t("stories_familiesActive")}
                       </p>
                     </div>
                   </button>
@@ -493,14 +493,14 @@ export default function HistoriasSection() {
                 popupRegion={activeRegion}
                 activePersonIdx={activePersonIdx}
                 onPersonChange={setActivePersonIdx}
-                familiesLabel={t("stories.families")}
+                familiesLabel={t("stories_families")}
               />
             </div>
 
             {/* Hint */}
             <p className="text-xs text-center mt-4" style={{ color: "rgba(184,168,152,0.45)" }}>
               <i className="ri-cursor-line mr-1" />
-              {t("stories.mapHint")}
+              {t("stories_mapHint")}
             </p>
           </div>
 

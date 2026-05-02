@@ -126,6 +126,15 @@ const cs = {
   lang_en: "English",
   lang_de: "Deutsch",
   lang_cs: "Čeština",
+  // Stories / Map
+  stories_badge: "Hlasy proměny",
+  stories_mapTitle: "Každý region má své",
+  stories_mapTitleEm: "jméno",
+  stories_mapSubtitle: "Řemeslnice z peruánských And uchovávají dávné techniky z pěti různých regionů.",
+  stories_families: "rodin",
+  stories_familiesActive: "aktivních rodin",
+  stories_mapHint: "Klepněte na region a objevte jeho příběhy",
+
 };
 
 export default cs;

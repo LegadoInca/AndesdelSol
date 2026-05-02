@@ -126,6 +126,15 @@ const de = {
   lang_en: "English",
   lang_de: "Deutsch",
   lang_cs: "Čeština",
+  // Stories / Map
+  stories_badge: "Stimmen der Transformation",
+  stories_mapTitle: "Jede Region hat einen",
+  stories_mapTitleEm: "Namen",
+  stories_mapSubtitle: "Die Kunsthandwerkerinnen der peruanischen Anden bewahren überlieferte Techniken aus fünf verschiedenen Regionen.",
+  stories_families: "Familien",
+  stories_familiesActive: "aktive Familien",
+  stories_mapHint: "Tippe auf eine Region, um ihre Geschichten zu entdecken",
+
 };
 
 export default de;

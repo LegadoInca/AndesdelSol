@@ -126,6 +126,15 @@ const en = {
   lang_en: "English",
   lang_de: "Deutsch",
   lang_cs: "Čeština",
+  // Stories / Map
+  stories_badge: "Voices of Transformation",
+  stories_mapTitle: "Each region has a",
+  stories_mapTitleEm: "name",
+  stories_mapSubtitle: "The artisans of the Peruvian Andes preserve ancestral techniques from five distinct regions.",
+  stories_families: "families",
+  stories_familiesActive: "active families",
+  stories_mapHint: "Tap a region to discover its stories",
+
 };
 
 export default en;
