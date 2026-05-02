@@ -25,7 +25,7 @@ export default function TestimoniosSection() {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('https://res.cloudinary.com/djfmngyl0/image/upload/v1775317494/pexels-jose-galarza-677920650-19276487_crimft.jpg')" }}
+        style={{ backgroundImage: "url('/AndesdelSol/images/coments.jpg')" }}
       />
       {/* Golden warm overlay — soft and elegant */}
       <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(120,60,10,0.78) 0%, rgba(160,90,20,0.72) 40%, rgba(100,50,5,0.80) 100%)' }} />
