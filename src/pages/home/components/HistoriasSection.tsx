@@ -398,7 +398,7 @@ export default function HistoriasSection() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
 
           {/* ── LEFT COLUMN ── */}
-          <div className="flex-shrink-0 lg:w-64 flex flex-col gap-4" style={{ position: "relative", zIndex: 50 }}>
+          <div className="flex-shrink-0 lg:w-96 flex flex-col gap-4" style={{ position: "relative", zIndex: 50 }}>
 
             {/* Title block — OUTSIDE the glass panel */}
             <div style={{ position: "relative", zIndex: 50 }}>
