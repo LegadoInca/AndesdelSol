@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ProductorasSection from './components/ProductorasSection';
 import ImpactoSection from './components/ImpactoSection';
+import HistoriasSection from './components/HistoriasSection';
 import CatalogoSection from './components/CatalogoSection';
 import ProcesoSection from './components/ProcesoSection';
 import StatsSection from './components/StatsSection';
@@ -20,7 +21,9 @@ export default function Home() {
       <Navbar cartCount={count} onCartOpen={() => setIsOpen(true)} />
       <HeroSection />
       <ProductorasSection />
+      <StatsSection />
       <ImpactoSection />
+      <HistoriasSection />
       <CatalogoSection onAddToCart={addItem} />
       <ProcesoSection />
       <TestimoniosSection />
