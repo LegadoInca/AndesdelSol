@@ -418,7 +418,7 @@ export default function HistoriasSection() {
               <p className="text-sm leading-relaxed mt-3" style={{ color: "#B8A898" }}>
                 {t("stories_mapSubtitle")}
               </p>
-              <div className="flex mt-5 overflow-visible">
+              <div className="flex mt-5 overflow-visible w-full">
                 <div className="relative overflow-hidden flex w-full items-center gap-2 px-8 py-2 rounded-full font-sans text-xs font-semibold tracking-[0.1em] uppercase cursor-default select-none whitespace-nowrap" style={{ background: 'linear-gradient(135deg, #c2622a 0%, #e07830 50%, #c2622a 100%)', color: '#fff8f0', boxShadow: '0 0 18px rgba(210,100,40,0.35)' }}>
                   <i className="ri-map-pin-line text-sm" />
                   {t("stories_mapHint")}
