@@ -125,7 +125,7 @@ export default function ImpactoSection() {
           </p>
           <h2
             className="text-white font-black leading-none mb-4"
-            style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(48px, 7vw, 100px)' }}
+            style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(40px, 6vw, 84px)' }}
           >
             MÁS QUE<br />
             <span className="text-amber-300">ARTESANÍA</span>
