@@ -407,7 +407,7 @@ export default function HistoriasSection() {
                 style={{ fontFamily: "'Inter', sans-serif", color: "#F5E6D3", fontSize: "2.6rem" }}
               >
                 {t("stories_mapTitle")}{" "}
-                <em style={{ color: "#D4A72C", fontStyle: "italic", fontSize: "2.85rem", textTransform: "lowercase" }}>{t("stories_mapTitleEm")}</em>
+                <em style={{ color: "#D4A72C", fontStyle: "italic", fontSize: "2.85rem", textTransform: "lowercase", fontFamily: "'Cormorant Garamond', serif" }}>{t("stories_mapTitleEm")}</em>
               </h2>
               <p className="text-sm leading-relaxed mt-3" style={{ color: "#B8A898" }}>
                 {t("stories_mapSubtitle")}

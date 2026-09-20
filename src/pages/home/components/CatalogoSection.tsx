@@ -154,6 +154,7 @@ export default function CatalogoSection({ onAddToCart }: CatalogoSectionProps) {
   const toastTimers = useRef<Record<number, ReturnType<typeof setTimeout>>>({});
 
   const [stockMap, setStockMap] = useState<Record<number, number>>(() => ({ ...INITIAL_STOCK }));
+  const [zoomImage, setZoomImage] = useState<{ src: string; name: string } | null>(null);
 
   const filtered = activeFilter === 'all' ? products : products.filter(p => p.category === activeFilter);
 
@@ -293,11 +294,16 @@ export default function CatalogoSection({ onAddToCart }: CatalogoSectionProps) {
                     )}
                     {/* Hover overlay */}
                     {stock > 0 && (
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <button
+                        type="button"
+                        onClick={() => setZoomImage({ src: product.image, name: product.name })}
+                        className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer"
+                        aria-label="Ampliar imagen"
+                      >
                         <div className="w-8 h-8 flex items-center justify-center text-white">
                           <i className="ri-zoom-in-line text-2xl"></i>
                         </div>
-                      </div>
+                      </button>
                     )}
                   </div>
 
@@ -426,6 +432,31 @@ export default function CatalogoSection({ onAddToCart }: CatalogoSectionProps) {
           </div>
         </div>
       </section>
+
+      {/* Zoom lightbox */}
+      {zoomImage && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-10"
+          style={{ background: 'rgba(10,5,2,0.92)', backdropFilter: 'blur(6px)' }}
+          onClick={() => setZoomImage(null)}
+        >
+          <button
+            type="button"
+            onClick={() => setZoomImage(null)}
+            className="absolute top-5 right-5 w-11 h-11 flex items-center justify-center rounded-full text-white cursor-pointer"
+            style={{ background: 'rgba(255,255,255,0.12)' }}
+            aria-label="Cerrar"
+          >
+            <i className="ri-close-line text-2xl"></i>
+          </button>
+          <img
+            src={zoomImage.src}
+            alt={zoomImage.name}
+            className="max-w-full max-h-full rounded-2xl shadow-2xl object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </>
   );
 }
