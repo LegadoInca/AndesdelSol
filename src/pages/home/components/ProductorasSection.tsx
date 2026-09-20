@@ -39,9 +39,6 @@ export default function ProductorasSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         {/* Header */}
         <div ref={headerRef} className={`text-center mb-14 fade-up ${headerVisible ? 'visible' : ''}`}>
-          <span className="inline-block bg-white/20 text-white text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-4 border border-white/30">
-            {t('prod_badge')}
-          </span>
           <h2
             className="text-3xl md:text-4xl font-black text-white leading-tight uppercase"
             style={{ fontFamily: "'Playfair Display', serif" }}
@@ -146,7 +143,7 @@ export default function ProductorasSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-3 left-3 right-3">
-                <span className="text-white/60 text-xs font-semibold uppercase tracking-widest">Productora</span>
+                <span className="text-white/60 text-xs font-semibold uppercase tracking-widest">Productor</span>
               </div>
             </div>
 

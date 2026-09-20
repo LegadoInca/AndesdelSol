@@ -6,7 +6,7 @@ export const productoras = [
     specialty: "Ceramista profesional",
     image: "/AndesdelSol/images/foto.png",
     workImage: "/AndesdelSol/images/toro.jpeg",
-    story: "Sobreviviente del conflicto armado de los años 80, María perdió a su esposo y tuvo que criar sola a sus cuatro hijos en las alturas de Ayacucho. Aprendió a tejer de su abuela y convirtió ese arte en su sustento y su voz.",
+    story: "Don Hilario convirtió su arte en una forma de salir adelante y sostener a su familia, impulsado siempre por el amor y el futuro de sus hijos. Desde una comunidad alejada, cada pieza que crea representa una lucha constante por mantener viva su tradición y encontrar nuevas oportunidades. Aunque la distancia muchas veces limita hasta dónde puede llegar su trabajo, él continúa creando, soñando y luchando para que el esfuerzo de sus manos llegue mucho más lejos.",
     quote: "Mi arte es todo un proceso, cada trazo para mí significa la esperanza de un mejor mañana",
     years: 30,
     products: 47,

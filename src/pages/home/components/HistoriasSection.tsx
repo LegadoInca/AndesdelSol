@@ -81,6 +81,12 @@ const regions: RegionStory[] = [
         tag: "Su familia",
         image: "/AndesdelSol/images/familia3.jpeg",
       },
+      {
+        title: "El arte de Hilario",
+        subtitle: "Don Hilario es ceramista en San Sebastián, Cusco. Cada pieza que crea representa una lucha constante por mantener viva su tradición y encontrar nuevas oportunidades.",
+        tag: "Hilario Quispe",
+        image: "/AndesdelSol/images/foto.png",
+      },
     ],
   },
   {
@@ -413,7 +419,7 @@ export default function HistoriasSection() {
                 style={{ fontFamily: "'Cormorant Garamond', serif", color: "#F5E6D3", fontSize: "2.6rem" }}
               >
                 {t("stories_mapTitle")}{" "}
-                <em style={{ color: "#C17A5C", fontStyle: "italic", fontSize: "2.85rem" }}>{t("stories_mapTitleEm")}</em>
+                <em style={{ color: "#D4A72C", fontStyle: "italic", fontSize: "2.85rem", textTransform: "lowercase" }}>{t("stories_mapTitleEm")}</em>
               </h2>
               <p className="text-sm leading-relaxed mt-3" style={{ color: "#B8A898" }}>
                 {t("stories_mapSubtitle")}
