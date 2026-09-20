@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { productoras } from '@/mocks/productoras';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
@@ -20,17 +20,6 @@ export default function ProductorasSection() {
       setAnimating(false);
     }, 350);
   };
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setAnimating(true);
-      setTimeout(() => {
-        setActive(prev => (prev + 1) % productoras.length);
-        setAnimating(false);
-      }, 350);
-    }, 7000);
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <section id="productoras" className="pt-24 pb-10 relative overflow-hidden" style={{ backgroundColor: '#1a0a00' }}>
@@ -54,7 +43,7 @@ export default function ProductorasSection() {
             {t('prod_badge')}
           </span>
           <h2
-            className="text-4xl md:text-5xl font-black text-white leading-tight"
+            className="text-3xl md:text-4xl font-black text-white leading-tight uppercase"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
             {t('prod_title1')}<br />

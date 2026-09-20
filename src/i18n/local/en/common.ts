@@ -18,7 +18,7 @@ const en = {
 
   // Productoras
   prod_badge: "They are AYNI",
-  prod_title1: "The Hands that Weave",
+  prod_title1: "The Hands Behind",
   prod_title2: "Stories of Resilience",
   prod_desc: "Meet the extraordinary women behind each creation. Mothers, daughters and sisters from Andean communities who have transformed pain into art, adversity into opportunity, and tradition into innovation.",
   prod_read_more: "Read full story",

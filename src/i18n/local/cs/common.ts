@@ -18,8 +18,8 @@ const cs = {
 
   // Productoras
   prod_badge: "Ony jsou AYNI",
-  prod_title1: "Ruce, které tkají",
-  prod_title2: "Příběhy odolnosti",
+  prod_title1: "Ruce za",
+  prod_title2: "příběhy odolnosti",
   prod_desc: "Poznejte mimořádné ženy za každým výtvorem. Matky, dcery a sestry z andských komunit, které přeměnily bolest v umění, nepřízeň v příležitost a tradici v inovaci.",
   prod_read_more: "Přečíst celý příběh",
   prod_specialty: "Specializace",

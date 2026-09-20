@@ -1,14 +1,14 @@
 export const productoras = [
   {
     id: 1,
-    name: "María Quispe Huanca",
-    region: "Ayacucho, Andes del Sur",
-    specialty: "Textiles & Tapices",
-    image: "/AndesdelSol/images/mujer1.jpeg",
-    workImage: "/AndesdelSol/images/producto1.jpeg",
+    name: "Hilario Quispe",
+    region: "San Sebastián, Cusco, Perú",
+    specialty: "Ceramista profesional",
+    image: "/AndesdelSol/images/foto.png",
+    workImage: "/AndesdelSol/images/toro.jpeg",
     story: "Sobreviviente del conflicto armado de los años 80, María perdió a su esposo y tuvo que criar sola a sus cuatro hijos en las alturas de Ayacucho. Aprendió a tejer de su abuela y convirtió ese arte en su sustento y su voz.",
-    quote: "Cada hilo que tejo lleva la memoria de mi pueblo. No tejemos tela, tejemos historia.",
-    years: 28,
+    quote: "Mi arte es todo un proceso, cada trazo para mí significa la esperanza de un mejor mañana",
+    years: 30,
     products: 47,
   },
   {

@@ -18,8 +18,8 @@ const es = {
 
   // Productoras
   prod_badge: "Ellas son AYNI",
-  prod_title1: "Las Manos que Tejen",
-  prod_title2: "Historias de Superación",
+  prod_title1: "Las manos detrás",
+  prod_title2: "de Historias de superación",
   prod_desc: "Conoce a las mujeres extraordinarias detrás de cada creación. Madres, hijas y hermanas de comunidades andinas que han transformado el dolor en arte, la adversidad en oportunidad, y la tradición en innovación.",
   prod_read_more: "Leer historia completa",
   prod_specialty: "Especialidad",

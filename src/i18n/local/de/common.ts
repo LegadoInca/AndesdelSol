@@ -18,7 +18,7 @@ const de = {
 
   // Productoras
   prod_badge: "Sie sind AYNI",
-  prod_title1: "Die Hände, die weben",
+  prod_title1: "Die Hände hinter",
   prod_title2: "Geschichten der Stärke",
   prod_desc: "Lernen Sie die außergewöhnlichen Frauen hinter jeder Schöpfung kennen. Mütter, Töchter und Schwestern aus Andengemeinschaften, die Schmerz in Kunst, Widrigkeiten in Chancen und Tradition in Innovation verwandelt haben.",
   prod_read_more: "Vollständige Geschichte lesen",
