@@ -218,7 +218,7 @@ export default function CatalogoSection({ onAddToCart }: CatalogoSectionProps) {
         }
       `}</style>
 
-      <section id="catalogo" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#1a0a00' }}>
+      <section id="catalogo" className="pt-8 pb-24 relative overflow-hidden" style={{ backgroundColor: '#1a0a00' }}>
         {/* Video background */}
         <video
           autoPlay muted loop playsInline
@@ -319,15 +319,15 @@ export default function CatalogoSection({ onAddToCart }: CatalogoSectionProps) {
                     {/* Stock alert */}
                     <StockBadge stock={stock} />
 
-                    <div className="flex items-center justify-between mt-4">
-                      <div>
+                    <div className="mt-4">
+                      <div className="mb-3">
                         <span className="text-2xl font-black text-white">{format(product.price)}</span>
                         <span className="ml-1 text-xs text-white/40 font-medium">{config.code}</span>
                       </div>
                       <button
                         onClick={() => handleAdd(product)}
                         disabled={stock <= 0}
-                        className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition-all whitespace-nowrap ${
+                        className={`w-full flex items-center justify-center gap-1.5 px-3 py-2 rounded-full text-xs font-semibold transition-all whitespace-nowrap ${
                           stock <= 0
                             ? 'bg-stone-300 text-stone-400 cursor-not-allowed'
                             : addedIds.has(product.id)
