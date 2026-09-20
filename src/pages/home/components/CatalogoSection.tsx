@@ -237,7 +237,7 @@ export default function CatalogoSection({ onAddToCart }: CatalogoSectionProps) {
             <span className="inline-block bg-stone-900 text-white text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-4">
               {t('cat_badge')}
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-stone-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+            <h2 className="text-4xl md:text-5xl font-extrabold" style={{ fontFamily: "'Inter', sans-serif", color: "#F5E6D3" }}>
               {t('cat_title')}
             </h2>
           </div>
