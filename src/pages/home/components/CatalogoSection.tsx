@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useRef } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { products, featuredProducts } from '@/mocks/products';
 import { CartItem } from '@/hooks/useCart';
@@ -24,52 +24,6 @@ const categories = [
   { key: 'cat_filter_deco', value: 'Decoración' },
   { key: 'cat_filter_accesorios', value: 'Accesorios' },
 ];
-
-// Each product gets a random countdown offset so they don't all show the same time
-const COUNTDOWN_OFFSETS: Record<number, number> = {};
-[...products, ...featuredProducts].forEach(p => {
-  // Random between 1h and 12h in seconds
-  COUNTDOWN_OFFSETS[p.id] = Math.floor(Math.random() * (12 * 3600 - 3600 + 1)) + 3600;
-});
-
-function useCountdown(initialSeconds: number) {
-  const [seconds, setSeconds] = useState(initialSeconds);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSeconds(prev => (prev <= 1 ? initialSeconds : prev - 1));
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [initialSeconds]);
-  const h = Math.floor(seconds / 3600);
-  const m = Math.floor((seconds % 3600) / 60);
-  const s = seconds % 60;
-  return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-}
-
-function CountdownBadge({ productId }: { productId: number }) {
-  const time = useCountdown(COUNTDOWN_OFFSETS[productId] ?? 3600);
-  return (
-    <div className="flex items-center gap-1.5 border border-amber-300 bg-amber-50 rounded-lg px-3 py-1.5 mt-2">
-      <div className="w-3 h-3 flex items-center justify-center">
-        <i className="ri-time-line text-amber-600 text-xs"></i>
-      </div>
-      <span className="text-amber-700 text-xs font-medium">Oferta termina en</span>
-      <span className="text-amber-800 text-xs font-black tracking-wider">{time}</span>
-    </div>
-  );
-}
-
-function FeaturedCountdownBadge({ productId }: { productId: number }) {
-  const time = useCountdown(COUNTDOWN_OFFSETS[productId] ?? 3600);
-  return (
-    <div className="flex items-center gap-1 mt-1.5">
-      <div className="w-3 h-3 flex items-center justify-center">
-        <i className="ri-time-line text-amber-400 text-xs"></i>
-      </div>
-      <span className="text-amber-400 text-xs font-black tracking-wider">{time}</span>
-    </div>
-  );
-}
 
 function StockBadge({ stock }: { stock: number }) {
   if (stock <= 0) {
@@ -310,7 +264,7 @@ export default function CatalogoSection({ onAddToCart }: CatalogoSectionProps) {
             {filtered.map((product, idx) => {
               const stock = stockMap[product.id] ?? INITIAL_STOCK[product.id] ?? 0;
               return (
-                <div key={product.id} className={`group bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 fade-up ${gridVisible ? 'visible' : ''}`} style={{ transitionDelay: `${idx * 60}ms` }}>
+                <div key={product.id} className={`group backdrop-blur-xl bg-white/10 border border-white/20 shadow-xl rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:bg-white/15 fade-up ${gridVisible ? 'visible' : ''}`} style={{ transitionDelay: `${idx * 60}ms` }}>
                   {/* Image */}
                   <div className="relative overflow-hidden" style={{ height: '260px' }}>
                     <img
@@ -348,24 +302,21 @@ export default function CatalogoSection({ onAddToCart }: CatalogoSectionProps) {
                   </div>
 
                   {/* Info */}
-                  <div className="p-5">
-                    <span className="text-amber-700 text-xs font-semibold uppercase tracking-widest">{product.category}</span>
-                    <h3 className="font-bold text-stone-900 text-base mt-1 leading-tight line-clamp-2" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  <div className="p-5" style={{ fontFamily: "'Inter', sans-serif" }}>
+                    <span className="text-amber-300 text-xs font-semibold uppercase tracking-widest">{product.category}</span>
+                    <h3 className="font-extrabold text-white text-base mt-1 leading-tight line-clamp-2">
                       {product.name}
                     </h3>
-                    <p className="text-stone-400 text-xs mt-1 italic">{t('cat_by')} {product.artisan}</p>
-                    <p className="text-stone-500 text-xs mt-2 leading-relaxed line-clamp-2">{product.description}</p>
-
-                    {/* Countdown timer */}
-                    {stock > 0 && <CountdownBadge productId={product.id} />}
+                    <p className="text-white/50 text-xs mt-1 italic">{t('cat_by')} {product.artisan}</p>
+                    <p className="text-white/60 text-xs mt-2 leading-relaxed line-clamp-2">{product.description}</p>
 
                     {/* Stock alert */}
                     <StockBadge stock={stock} />
 
                     <div className="flex items-center justify-between mt-4">
                       <div>
-                        <span className="text-2xl font-black text-stone-900">{format(product.price)}</span>
-                        <span className="ml-1 text-xs text-stone-400 font-medium">{config.code}</span>
+                        <span className="text-2xl font-black text-white">{format(product.price)}</span>
+                        <span className="ml-1 text-xs text-white/40 font-medium">{config.code}</span>
                       </div>
                       <button
                         onClick={() => handleAdd(product)}
@@ -449,7 +400,6 @@ export default function CatalogoSection({ onAddToCart }: CatalogoSectionProps) {
                     <div className="p-4">
                       <h4 className="text-white font-bold text-sm leading-tight">{product.name}</h4>
                       <p className="text-white/50 text-xs mt-1 italic">{t('cat_by')} {product.artisan}</p>
-                      {fStock > 0 && <FeaturedCountdownBadge productId={product.id} />}
                       <FeaturedStockBadge stock={fStock} />
                       <div className="flex items-center justify-between mt-3">
                         <span className="text-amber-300 font-black text-lg">{format(product.price)}</span>

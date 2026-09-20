@@ -15,7 +15,7 @@ export default function ProcesoSection() {
     <section className="relative overflow-hidden">
       {/* Background image */}
       <img
-        src="https://readdy.ai/api/search-image?query=peruvian%20andean%20artisan%20woman%20smiling%20working%20with%20pottery%20wheel%20in%20warm%20golden%20workshop%20light%2C%20close%20up%20documentary%20photography%2C%20rich%20amber%20and%20brown%20tones%2C%20cinematic%20depth%20of%20field%2C%20authentic%20craftsmanship%20scene%20with%20ceramic%20vessels%20in%20background&width=1920&height=700&seq=proceso2&orientation=landscape"
+        src="/AndesdelSol/images/fondo1.jpeg"
         alt="Proceso artesanal"
         className="absolute inset-0 w-full h-full object-cover object-top"
       />
@@ -29,8 +29,8 @@ export default function ProcesoSection() {
       >
         {/* Title */}
         <h2
-          className="text-white font-black text-3xl md:text-5xl mb-14 max-w-2xl leading-tight drop-shadow-lg"
-          style={{ fontFamily: "'Playfair Display', serif", textShadow: '0 2px 20px rgba(0,0,0,0.6)' }}
+          className="text-white font-extrabold text-2xl md:text-4xl mb-14 max-w-2xl leading-tight drop-shadow-lg uppercase"
+          style={{ fontFamily: "'Inter', sans-serif", textShadow: '0 2px 20px rgba(0,0,0,0.6)' }}
         >
           {t('process_title')}
         </h2>
