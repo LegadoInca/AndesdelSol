@@ -13,33 +13,21 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    type: 'video',
-    src: '/AndesdelSol/videos/hero1.mp4',
+    type: 'image',
+    src: "/AndesdelSol/images/fondo(2).jpg",
     label: 'Tejidos Ancestrales',
   },
   {
     id: 2,
     type: 'image',
-    src: "/AndesdelSol/images/hero2.jpeg",
+    src: "/AndesdelSol/images/fondo3.jpg",
     label: 'Cerámica Viva',
   },
   {
     id: 3,
     type: 'image',
-    src: "/AndesdelSol/images/hero3.jpeg",
+    src: "/AndesdelSol/images/fondos.jpg",
     label: 'Comunidad y Fuerza',
-  },
-  {
-    id: 4,
-    type: 'image',
-    src: "/AndesdelSol/images/hero4.jpeg",
-    label: 'Arte con Propósito',
-  },
-  {
-    id: 5,
-    type: 'image',
-    src: "/AndesdelSol/images/hero5.jpeg",
-    label: 'Colores del Ande',
   },
 ];
 
@@ -62,17 +50,7 @@ export default function HeroSection() {
   };
 
   useEffect(() => {
-    const currentSlide = slides[current];
-    if (currentSlide.type === 'video') {
-      // For video slides, advance after video ends or after 12s max
-      startTimer(12000);
-      if (videoRef.current) {
-        videoRef.current.currentTime = 0;
-        videoRef.current.play().catch(() => {});
-      }
-    } else {
-      startTimer(6000);
-    }
+    startTimer(8000);
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, [current]);
 
@@ -135,24 +113,24 @@ export default function HeroSection() {
 
             {/* Title */}
             <h1 className="text-white font-black leading-none mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-              <span className="block text-4xl md:text-6xl uppercase" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>
+              <span className="block text-6xl md:text-8xl uppercase" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>
                 <span style={{ color: "#141414" }}>Inti</span><span style={{ color: "#D4A72C" }}>Qori</span>
               </span>
               <span className="flex items-center gap-2 mt-1 mb-1">
                 <span style={{ width: "8px", height: "8px", borderRadius: "9999px", backgroundColor: "#D4A72C", display: "inline-block" }} />
                 <span
-                  className="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase"
+                  className="text-sm md:text-base font-semibold tracking-[0.35em] uppercase"
                   style={{ fontFamily: "'Inter', sans-serif", color: "#141414" }}
                 >
                   Artesania
                 </span>
               </span>
-              <span className="block text-2xl md:text-4xl mt-2">{t('hero_title2')}</span>
-              <span className="block text-2xl md:text-4xl">{t('hero_title3')}</span>
+              <span className="block text-xl md:text-3xl mt-2">{t('hero_title2')}</span>
+              <span className="block text-xl md:text-3xl">{t('hero_title3')}</span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-white/85 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
+            <p className="text-white/85 font-bold text-xs md:text-sm leading-relaxed mb-8 max-w-xl">
               {t('hero_subtitle')}
             </p>
 

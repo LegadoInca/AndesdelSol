@@ -1,153 +1,219 @@
-import { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import i18n from '@/i18n';
+import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import i18n from "@/i18n";
+
+const LANGUAGES = [
+  { code: "es", label: "ES", flag: "🇵🇪" },
+  { code: "en", label: "EN", flag: "🇬🇧" },
+  { code: "de", label: "DE", flag: "🇩🇪" },
+  { code: "cs", label: "CS", flag: "🇨🇿" },
+];
 
 interface NavbarProps {
   cartCount: number;
   onCartOpen: () => void;
 }
 
-const languages = [
-  { code: 'es', label: 'Español', flag: '🇵🇪' },
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
-  { code: 'cs', label: 'Čeština', flag: '🇨🇿' },
-];
-
 export default function Navbar({ cartCount, onCartOpen }: NavbarProps) {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState('es');
+  const [currentLang, setCurrentLang] = useState("es");
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleLang = (code: string) => {
+  const changeLang = (code: string) => {
     i18n.changeLanguage(code);
     setCurrentLang(code);
     setLangOpen(false);
   };
 
   const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
     setMobileOpen(false);
   };
 
-  const activeLang = languages.find(l => l.code === currentLang) || languages[0];
+  const navLinks = [
+    { key: "nav.producers", id: "producers" },
+    { key: "nav.catalog", id: "catalog" },
+    { key: "nav.story", id: "story" },
+    { key: "nav.contact", id: "contact" },
+  ];
+
+  const activeLang = LANGUAGES.find((l) => l.code === currentLang) || LANGUAGES[0];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-white shadow-sm' : 'bg-transparent'}`}>
-      <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-20">
-        {/* Logo */}
-        <a href="/" className="flex items-center gap-3 cursor-pointer">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-30 transition-all duration-300 ${
+        scrolled ? "shadow-sm" : ""
+      }`}
+      style={{
+        background: scrolled ? "rgba(10,26,47,0.97)" : "transparent",
+        backdropFilter: scrolled ? "blur(12px)" : "none",
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-4 md:px-8 h-12 md:h-14 flex items-center justify-between">
+        <button onClick={() => scrollTo("hero")} className="cursor-pointer">
           <img
-            src="https://public.readdy.ai/ai/img_res/1a7d4011-655d-43af-8ac4-7728ff0a084e.png"
-            alt="AYNI Logo"
-            className="h-12 w-auto object-contain"
+            src="/Coya/images/logo.png"
+            alt="COYA"
+            className="h-8 md:h-9 object-contain"
           />
-        </a>
+        </button>
 
-        {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
-          {[
-            { key: 'nav_catalog', id: 'catalogo' },
-            { key: 'nav_artisans', id: 'productoras' },
-            { key: 'nav_story', id: 'impacto' },
-            { key: 'nav_contact', id: 'contacto' },
-          ].map(item => (
+          {navLinks.map((link) => (
             <button
-              key={item.key}
-              onClick={() => scrollTo(item.id)}
-              className={`text-sm font-medium tracking-wide transition-colors cursor-pointer whitespace-nowrap ${scrolled ? 'text-stone-700 hover:text-amber-700' : 'text-white/90 hover:text-white'}`}
+              key={link.key}
+              onClick={() => scrollTo(link.id)}
+              className="text-sm font-medium cursor-pointer transition-colors whitespace-nowrap"
+              style={{ color: "#F5E6D3", fontFamily: "'Jost', sans-serif", fontSize: "16px", fontWeight: 500, letterSpacing: "0.04em" }}
             >
-              {t(item.key)}
+              {t(link.key)}
             </button>
           ))}
         </div>
 
-        {/* Right Actions */}
-        <div className="flex items-center gap-4">
-          {/* Language Selector */}
+        {/* Empresas link */}
+        <Link
+          to="/empresas"
+          className="hidden md:flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold cursor-pointer transition-all whitespace-nowrap"
+          style={{
+            background: "rgba(255,255,255,0.10)",
+            color: "#F5E6D3",
+            border: "1px solid rgba(212,175,122,0.4)",
+            fontFamily: "'Jost', sans-serif",
+            letterSpacing: "0.06em",
+          }}
+        >
+          <i className="ri-building-line" style={{ fontSize: "12px" }} />
+          EMPRESAS
+        </Link>
+
+        {/* Flags — desktop */}
+        <div className="hidden md:flex items-center gap-2 animate-flag-float">
+          <img
+            src="https://flagcdn.com/w40/pe.png"
+            alt="Peru"
+            className="w-9 h-6 rounded-sm object-cover shadow-sm"
+          />
+
+          <img
+            src="https://flagcdn.com/w40/cz.png"
+            alt="Czech Republic"
+            className="w-9 h-6 rounded-sm object-cover shadow-sm"
+          />
+        </div>
+
+        <div className="flex items-center gap-3">
           <div className="relative">
             <button
               onClick={() => setLangOpen(!langOpen)}
-              className={`flex items-center gap-2 text-sm font-medium cursor-pointer whitespace-nowrap transition-colors ${scrolled ? 'text-stone-700 hover:text-amber-700' : 'text-white/90 hover:text-white'}`}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold cursor-pointer transition-all whitespace-nowrap"
+              style={{
+                background: "rgba(255,255,255,0.12)",
+                color: "#F5E6D3",
+                fontFamily: "'Jost', sans-serif",
+              }}
             >
               <span>{activeLang.flag}</span>
-              <span className="hidden sm:inline">{activeLang.code.toUpperCase()}</span>
-              <i className="ri-arrow-down-s-line text-xs"></i>
+              <span>{activeLang.label}</span>
+              <i className="ri-arrow-down-s-line text-xs" />
             </button>
             {langOpen && (
-              <div className="absolute right-0 top-full mt-2 bg-white rounded-xl shadow-lg border border-stone-100 overflow-hidden w-44 z-50">
-                {languages.map(lang => (
+              <div
+                className="absolute right-0 top-full mt-2 rounded-xl overflow-hidden shadow-lg z-50"
+                style={{ background: "#FFFDF9", minWidth: "120px" }}
+              >
+                {LANGUAGES.map((lang) => (
                   <button
                     key={lang.code}
-                    onClick={() => handleLang(lang.code)}
-                    className={`w-full flex items-center gap-3 px-4 py-3 text-sm cursor-pointer transition-colors hover:bg-amber-50 ${currentLang === lang.code ? 'bg-amber-50 text-amber-700 font-medium' : 'text-stone-700'}`}
+                    onClick={() => changeLang(lang.code)}
+                    className="w-full flex items-center gap-2 px-4 py-2.5 text-sm cursor-pointer transition-colors hover:bg-amber-50 whitespace-nowrap"
+                    style={{ color: currentLang === lang.code ? "#C17A5C" : "#2C1810" }}
                   >
                     <span>{lang.flag}</span>
-                    <span>{lang.label}</span>
+                    <span className="font-medium">{lang.label}</span>
+                    {currentLang === lang.code && <i className="ri-check-line ml-auto text-xs" />}
                   </button>
                 ))}
               </div>
             )}
           </div>
 
-          {/* Cart */}
           <button
             onClick={onCartOpen}
-            className={`relative flex items-center gap-2 cursor-pointer transition-colors whitespace-nowrap ${scrolled ? 'text-stone-700 hover:text-amber-700' : 'text-white/90 hover:text-white'}`}
+            className="relative w-10 h-10 flex items-center justify-center rounded-full cursor-pointer transition-all"
+            style={{
+              background: "rgba(255,255,255,0.12)",
+              color: "#F5E6D3",
+            }}
           >
-            <div className="w-6 h-6 flex items-center justify-center">
-              <i className="ri-shopping-bag-line text-xl"></i>
-            </div>
+            <i className="ri-shopping-cart-line text-lg" />
             {cartCount > 0 && (
-              <span className="absolute -top-2 -right-2 bg-amber-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">
+              <span
+                className="absolute -top-1 -right-1 w-5 h-5 flex items-center justify-center rounded-full text-xs font-bold"
+                style={{ background: "#C17A5C", color: "#FFFDF9" }}
+              >
                 {cartCount}
               </span>
             )}
           </button>
 
-          {/* Mobile Menu */}
+          {/* Flags — mobile, always visible */}
+          <div className="md:hidden flex items-center gap-1.5 animate-flag-float">
+            <img
+              src="https://flagcdn.com/w40/pe.png"
+              alt="Peru"
+              className="w-6 h-4 rounded-sm object-cover shadow-sm"
+            />
+
+            <img
+              src="https://flagcdn.com/w40/cz.png"
+              alt="Czech Republic"
+              className="w-6 h-4 rounded-sm object-cover shadow-sm"
+            />
+          </div>
+
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`md:hidden cursor-pointer transition-colors ${scrolled ? 'text-stone-700' : 'text-white'}`}
+            className="md:hidden w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
+            style={{ color: "#F5E6D3" }}
           >
-            <div className="w-6 h-6 flex items-center justify-center">
-              <i className={`text-xl ${mobileOpen ? 'ri-close-line' : 'ri-menu-line'}`}></i>
-            </div>
+            <i className={`text-xl ${mobileOpen ? "ri-close-line" : "ri-menu-line"}`} />
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-stone-100 px-4 py-4 flex flex-col gap-4">
-          {[
-            { key: 'nav_catalog', id: 'catalogo' },
-            { key: 'nav_artisans', id: 'productoras' },
-            { key: 'nav_story', id: 'impacto' },
-            { key: 'nav_contact', id: 'contacto' },
-          ].map(item => (
+        <div className="md:hidden px-4 pb-4" style={{ background: "rgba(10,26,47,0.97)" }}>
+          {navLinks.map((link) => (
             <button
-              key={item.key}
-              onClick={() => scrollTo(item.id)}
-              className="text-stone-700 text-sm font-medium text-left cursor-pointer hover:text-amber-700 transition-colors"
+              key={link.key}
+              onClick={() => scrollTo(link.id)}
+              className="w-full text-left py-3 text-sm cursor-pointer whitespace-nowrap"
+              style={{ color: "#F5E6D3", fontFamily: "'Jost', sans-serif", borderColor: "rgba(212,175,122,0.25)" }}
             >
-              {t(item.key)}
+              {t(link.key)}
             </button>
           ))}
+          <Link
+            to="/empresas"
+            onClick={() => setMobileOpen(false)}
+            className="flex items-center gap-2 py-3 text-sm font-bold cursor-pointer whitespace-nowrap"
+            style={{ color: "#D4AF7A", fontFamily: "'Jost', sans-serif" }}
+          >
+            <i className="ri-building-line" />
+            Para Empresas
+          </Link>
         </div>
-      )}
-
-      {/* Overlay for lang dropdown */}
-      {langOpen && (
-        <div className="fixed inset-0 z-40" onClick={() => setLangOpen(false)}></div>
       )}
     </nav>
   );
