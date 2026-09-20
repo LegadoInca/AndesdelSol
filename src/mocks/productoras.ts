@@ -6,7 +6,7 @@ export const productoras = [
     specialty: "Ceramista profesional",
     image: "/AndesdelSol/images/foto.png",
     workImage: "/AndesdelSol/images/toro.jpeg",
-    story: "Don Hilario convirtió su arte en una forma de salir adelante y sostener a su familia, impulsado siempre por el amor y el futuro de sus hijos. Desde una comunidad alejada, cada pieza que crea representa una lucha constante por mantener viva su tradición y encontrar nuevas oportunidades. Aunque la distancia muchas veces limita hasta dónde puede llegar su trabajo, él continúa creando, soñando y luchando para que el esfuerzo de sus manos llegue mucho más lejos.",
+    story: "Don Hilario convirtió su arte en el sustento de su familia, motivado por el amor y el futuro de sus hijos. Desde una comunidad alejada, cada pieza es una lucha por mantener viva su tradición y abrirse camino. Con sus manos, sigue creando y soñando con llevar su arte mucho más lejos.",
     quote: "Mi arte es todo un proceso, cada trazo para mí significa la esperanza de un mejor mañana",
     years: 30,
     products: 47,
