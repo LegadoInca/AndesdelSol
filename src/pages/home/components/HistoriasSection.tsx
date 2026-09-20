@@ -390,7 +390,7 @@ export default function HistoriasSection() {
     <section id="historias" className="relative py-2 md:py-4 overflow-hidden">
       {/* Background */}
       <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
-        <source src="/AndesdelSol/videos/fondo2.mp4" type="video/mp4" />
+        <source src="/AndesdelSol/videos/fondos3.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0" style={{ background: "rgba(18,8,3,0.32)" }} />
 
@@ -409,11 +409,11 @@ export default function HistoriasSection() {
                 </span>
               </div>
               <h2
-                className="font-bold leading-tight whitespace-nowrap"
-                style={{ fontFamily: "'Cormorant Garamond', serif", color: "#F5E6D3", fontSize: "3rem" }}
+                className="font-bold leading-tight whitespace-nowrap uppercase"
+                style={{ fontFamily: "'Cormorant Garamond', serif", color: "#F5E6D3", fontSize: "2.6rem" }}
               >
                 {t("stories_mapTitle")}{" "}
-                <em style={{ color: "#C17A5C", fontStyle: "italic", fontSize: "3.3rem" }}>{t("stories_mapTitleEm")}</em>
+                <em style={{ color: "#C17A5C", fontStyle: "italic", fontSize: "2.85rem" }}>{t("stories_mapTitleEm")}</em>
               </h2>
               <p className="text-sm leading-relaxed mt-3" style={{ color: "#B8A898" }}>
                 {t("stories_mapSubtitle")}
