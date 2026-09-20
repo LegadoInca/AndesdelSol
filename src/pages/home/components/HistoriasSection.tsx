@@ -70,21 +70,9 @@ const regions: RegionStory[] = [
     y: 50,
     people: [
       {
-        title: "La voz de Lucía",
-        subtitle: "Lucía sufrió violencia doméstica durante 12 años. El bordado le devolvió la independencia. Hoy dirige una cooperativa de 15 mujeres en el Valle Sagrado.",
-        tag: "Artesana",
-        image: "/AndesdelSol/images/mujer3.jpeg",
-      },
-      {
-        title: "La cooperativa de Lucía",
-        subtitle: "Las 15 mujeres de su cooperativa son sobrevivientes igual que ella. Bordan juntas cada sábado en el Valle Sagrado de los Incas.",
-        tag: "Su familia",
-        image: "/AndesdelSol/images/familia3.jpeg",
-      },
-      {
-        title: "El arte de Hilario",
+        title: "Las manos de Hilario",
         subtitle: "Don Hilario es ceramista en San Sebastián, Cusco. Cada pieza que crea representa una lucha constante por mantener viva su tradición y encontrar nuevas oportunidades.",
-        tag: "Hilario Quispe",
+        tag: "Artesano",
         image: "/AndesdelSol/images/foto.png",
       },
     ],
@@ -415,8 +403,8 @@ export default function HistoriasSection() {
                 </span>
               </div>
               <h2
-                className="font-bold leading-tight whitespace-nowrap uppercase"
-                style={{ fontFamily: "'Cormorant Garamond', serif", color: "#F5E6D3", fontSize: "2.6rem" }}
+                className="font-extrabold leading-tight whitespace-nowrap uppercase"
+                style={{ fontFamily: "'Inter', sans-serif", color: "#F5E6D3", fontSize: "2.6rem" }}
               >
                 {t("stories_mapTitle")}{" "}
                 <em style={{ color: "#D4A72C", fontStyle: "italic", fontSize: "2.85rem", textTransform: "lowercase" }}>{t("stories_mapTitleEm")}</em>
