@@ -135,7 +135,18 @@ export default function HeroSection() {
 
             {/* Title */}
             <h1 className="text-white font-black leading-none mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-              <span className="block text-4xl md:text-6xl text-amber-300">{t('hero_title1')}</span>
+              <span className="block text-4xl md:text-6xl">
+                <span style={{ color: "#141414" }}>Inti</span><span style={{ color: "#D4A72C" }}>Qori</span>
+              </span>
+              <span className="flex items-center gap-2 mt-3 mb-1">
+                <span style={{ width: "8px", height: "8px", borderRadius: "9999px", backgroundColor: "#D4A72C", display: "inline-block" }} />
+                <span
+                  className="text-white text-xs md:text-sm font-semibold tracking-[0.35em] uppercase"
+                  style={{ fontFamily: "'Inter', sans-serif" }}
+                >
+                  Artesania
+                </span>
+              </span>
               <span className="block text-2xl md:text-4xl mt-2">{t('hero_title2')}</span>
               <span className="block text-2xl md:text-4xl">{t('hero_title3')}</span>
             </h1>
