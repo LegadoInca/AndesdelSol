@@ -135,16 +135,21 @@ export default function HeroSection() {
 
             {/* Title */}
             <h1 className="text-white font-black leading-none mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-              <span className="block text-4xl md:text-6xl">
-                <span style={{ color: "#141414" }}>Inti</span><span style={{ color: "#D4A72C" }}>Qori</span>
-              </span>
-              <span className="flex items-center gap-2 mt-3 mb-1">
-                <span style={{ width: "8px", height: "8px", borderRadius: "9999px", backgroundColor: "#D4A72C", display: "inline-block" }} />
-                <span
-                  className="text-white text-xs md:text-sm font-semibold tracking-[0.35em] uppercase"
-                  style={{ fontFamily: "'Inter', sans-serif" }}
-                >
-                  Artesania
+              <span
+                className="inline-block px-4 py-2 mb-1 rounded-xl"
+                style={{ backgroundColor: "rgba(250,248,244,0.98)", backdropFilter: "blur(4px)" }}
+              >
+                <span className="block text-4xl md:text-6xl uppercase" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>
+                  <span style={{ color: "#141414" }}>Inti</span><span style={{ color: "#D4A72C" }}>Qori</span>
+                </span>
+                <span className="flex items-center gap-2 mt-1">
+                  <span style={{ width: "8px", height: "8px", borderRadius: "9999px", backgroundColor: "#D4A72C", display: "inline-block" }} />
+                  <span
+                    className="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase"
+                    style={{ fontFamily: "'Inter', sans-serif", color: "#141414" }}
+                  >
+                    Artesania
+                  </span>
                 </span>
               </span>
               <span className="block text-2xl md:text-4xl mt-2">{t('hero_title2')}</span>
