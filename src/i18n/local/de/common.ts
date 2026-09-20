@@ -9,7 +9,7 @@ const de = {
 
   // Hero
   hero_badge: "Handgefertigt in den peruanischen Anden",
-  hero_title1: "Andes del Sol",
+  hero_title1: "IntiQori",
   hero_title2: "Handwerk mit",
   hero_title3: "Seele und Zweck",
   hero_subtitle: "Jedes Stück erzählt die Geschichte von Kriegerinnen, die überlieferte Tradition in zeitgenössische Kunst verwandeln",

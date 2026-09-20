@@ -26,7 +26,7 @@ const slides: Slide[] = [
   {
     id: 3,
     type: 'image',
-    src: "/AndesdelSol/images/fondos.jpg",
+    src: "/AndesdelSol/images/telar.png",
     label: 'Comunidad y Fuerza',
   },
 ];
@@ -113,7 +113,7 @@ export default function HeroSection() {
 
             {/* Title */}
             <h1 className="text-white font-black leading-none mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-              <span className="block text-6xl md:text-8xl uppercase" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>
+              <span className="block text-5xl md:text-7xl uppercase" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>
                 <span style={{ color: "#141414" }}>Inti</span><span style={{ color: "#D4A72C" }}>Qori</span>
               </span>
               <span className="flex items-center gap-2 mt-1 mb-1">

@@ -9,7 +9,7 @@ const en = {
 
   // Hero
   hero_badge: "Handmade in the Peruvian Andes",
-  hero_title1: "Andes del Sol",
+  hero_title1: "IntiQori",
   hero_title2: "Craftsmanship with",
   hero_title3: "Soul and Purpose",
   hero_subtitle: "Each piece tells the story of warrior women who transform ancestral tradition into contemporary art",

@@ -9,7 +9,7 @@ const cs = {
 
   // Hero
   hero_badge: "Ručně vyrobeno v peruánských Andách",
-  hero_title1: "Andes del Sol",
+  hero_title1: "IntiQori",
   hero_title2: "Řemeslo s",
   hero_title3: "Duší a Účelem",
   hero_subtitle: "Každý kus vypráví příběh bojovnic, které přeměňují pradávnou tradici v současné umění",
