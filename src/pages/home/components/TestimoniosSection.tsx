@@ -36,7 +36,7 @@ export default function TestimoniosSection() {
           <span className="inline-block bg-white/20 text-white text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-4 border border-white/30">
             {t('test_badge')}
           </span>
-          <h2 className="text-4xl md:text-5xl font-black text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white uppercase" style={{ fontFamily: "'Inter', sans-serif" }}>
             {t('test_title')}
           </h2>
         </div>
