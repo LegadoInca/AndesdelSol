@@ -59,7 +59,7 @@ export default function ContactoSection() {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover object-center"
-        src="https://res.cloudinary.com/djfmngyl0/video/upload/v1775280064/1094449-hd_1920_1080_25fps_v8uhsi.mp4"
+        src="/AndesdelSol/videos/hero1.mp4"
       />
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/55"></div>
@@ -70,7 +70,7 @@ export default function ContactoSection() {
           <span className="inline-block bg-amber-700 text-white text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-4">
             {t('contact_badge')}
           </span>
-          <h2 className="text-4xl md:text-5xl font-black text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-white" style={{ fontFamily: "'Inter', sans-serif" }}>
             {t('contact_title')}
           </h2>
           <p className="mt-4 text-white/70 max-w-xl mx-auto text-base leading-relaxed">{t('contact_desc')}</p>

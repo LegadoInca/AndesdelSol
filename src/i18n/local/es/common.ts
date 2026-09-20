@@ -1,7 +1,7 @@
 const es = {
   // Nav
   nav_catalog: "Catálogo",
-  nav_artisans: "Artesanas",
+  nav_artisans: "Artesanos",
   nav_story: "Nuestra Historia",
   nav_contact: "Contacto",
   nav_cart: "Carrito",

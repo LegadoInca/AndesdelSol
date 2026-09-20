@@ -107,7 +107,7 @@ export default function ProcesoSection() {
                     }}
                   >
                     <img
-                      src="https://readdy.ai/api/search-image?query=close%20up%20hands%20of%20peruvian%20artisan%20shaping%20clay%20pottery%20on%20wheel%2C%20warm%20amber%20golden%20light%2C%20macro%20photography%2C%20authentic%20craft%20detail&width=120&height=120&seq=proceso_thumb1&orientation=squarish"
+                      src="/AndesdelSol/images/foto.jpg"
                       alt="Artesanía manual"
                       className="w-full h-full object-cover object-top"
                     />
